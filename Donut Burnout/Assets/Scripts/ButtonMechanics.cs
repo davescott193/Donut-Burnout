@@ -31,6 +31,8 @@ public class ButtonMechanics : MonoBehaviour, IPointerClickHandler, IPointerDown
     [Tooltip("Opens the level Menu")]
     public bool OpenLevelBool;
     public bool CloseLevelBool;
+    public bool TestWorldBool;
+
     [Tooltip("Opens the controls Menu")]
     public bool OpenControlsBool;
 
@@ -185,6 +187,11 @@ public class ButtonMechanics : MonoBehaviour, IPointerClickHandler, IPointerDown
         if (ExitGameBool)
         {
             Application.Quit();
+        }
+
+        if (TestWorldBool)
+        {
+            GameManager.instance.ChangeScene(1);
         }
 
         if (PerformanceToggleBool)
