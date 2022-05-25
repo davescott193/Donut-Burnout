@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Spin: 0
   m_Tilt: 0
   m_Sensitivity: 1
-  m_TiltExtents: {x: -85, y: 85}
+  m_TiltExtents: {x: -50, y: 30}
   m_bCursorLocked: 1
 --- !u!1 &1884401237
 GameObject:
