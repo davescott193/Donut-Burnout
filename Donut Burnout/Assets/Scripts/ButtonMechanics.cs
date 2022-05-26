@@ -151,7 +151,6 @@ public class ButtonMechanics : MonoBehaviour, IPointerClickHandler, IPointerDown
             GameManager.AnimationChangeDirection(MainMenu.instance.GetComponent<Animation>(), "Level Menu Change", false);
         }
 
-
         if (PoolName != "")
         {
             PlayerPrefs.SetFloat(PoolName, transform.GetChild(0).GetComponent<Slider>().value);

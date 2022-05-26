@@ -12,7 +12,7 @@ using UnityEngine.SceneManagement;
  Auckland
  New Zealand
 
- (c) 2021 Media Design School
+ (c) 2022 Media Design School
 
  File Name    : GameManager.cs
  Description  : holds vitial functions and loading scenes
