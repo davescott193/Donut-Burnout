@@ -28,15 +28,15 @@ public class GameManager : MonoBehaviour
     public AudioPool MusicPool;
     public AudioPool SoundPool;
 
-    public Animation SceneAnimation;
-    Coroutine LoadingCoroutine;
-    // public PostProcessResources postProcessResources;
-
     [Header("Audio Clip Referencing")]
     public AudioClip ButtonDownSound;
     public AudioClip ButtonUpSound;
     [Space(10)]
     public AudioClip LoadingSound;
+
+    public Animation SceneAnimation;
+    Coroutine LoadingCoroutine;
+    // public PostProcessResources postProcessResources;
 
     [System.Serializable]
     public class ToggleData

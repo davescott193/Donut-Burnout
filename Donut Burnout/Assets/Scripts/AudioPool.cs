@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
  Auckland
  New Zealand
 
- (c) 2021 Media Design School
+ (c) 2022 Media Design School
 
  File Name    : AudioPool.cs
  Description  : Manages Sound and music
@@ -73,24 +73,6 @@ public class AudioPool : MonoBehaviour
 
         RefreshAudioVolumes();
     }
-
-
-    /*
-	public bool ReturnContinueSoundTrack()
-	{
-		SetupManager.MusicData musicData = SetupManager.singleton.SceneMusic_List[SceneManager.GetActiveScene().buildIndex];
-
-		if (Audio_List[PoolPosition].Audio.clip == musicData.InitialTrack || Audio_List[PoolPosition].Audio.clip == musicData.WrappedTrack || musicData.SoundTrack_List.Contains(Audio_List[PoolPosition].Audio.clip))
-		{
-			return true;
-		}
-		else
-		{
-			Audio_List[PoolPosition].Audio.time = 0;
-			return false;
-		}
-	}
-	*/
 
     private void Update()
     {
@@ -193,7 +175,7 @@ public class AudioPool : MonoBehaviour
         }
     }
 
-    public void PauseAudio(AudioData audioData, bool Pause = true)
+    void PauseAudio(AudioData audioData, bool Pause = true)
     {
         audioData.isPaused = Pause;
 
@@ -237,7 +219,7 @@ public class AudioPool : MonoBehaviour
 
 	 */
 
-    public AudioData SetupAudioData(AudioData audioData, AudioClip RequestedAudio, bool isLooped = false)
+    AudioData SetupAudioData(AudioData audioData, AudioClip RequestedAudio, bool isLooped = false)
     {
         audioData.SceneNumber = SceneManager.GetActiveScene().buildIndex;
         audioData.Audio.Stop();
