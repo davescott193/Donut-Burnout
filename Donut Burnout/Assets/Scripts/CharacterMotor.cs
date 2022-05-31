@@ -18,8 +18,31 @@ public class CharacterMotor : MonoBehaviour
     public Vector3 m_velocity = new Vector3(0.0f, 0.0f, 0.0f);
     public bool m_grounded = false;
 
+    //Code for Stress Bar
+
+    private Rigidbody _rb;
+
+    public Stress_UI stressBar;
+    public float maxStress = 100;
+    public float currentStress;
+
+    
+    void Start()
+    {
+        currentStress = maxStress;
+        stressBar.SetStress(currentStress);
+
+        _rb = GetComponent<Rigidbody>();
+    }
+
+
     void Update()
     {
+
+        //More Stress Code
+        stressBar.SetStress(currentStress);
+
+
         float x = 0.0f;
         if (Input.GetKey(KeyCode.A))
         {
