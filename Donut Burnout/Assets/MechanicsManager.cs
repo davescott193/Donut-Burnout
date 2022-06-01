@@ -13,6 +13,7 @@ public class MechanicsManager : MonoBehaviour
 
     List<CustomerData> CustomerList = new List<CustomerData>();
     public float NewCustomerTimerFloat;
+    public float ThresholdFloat;
 
     public class CustomerData
     {
@@ -39,10 +40,16 @@ public class MechanicsManager : MonoBehaviour
     {
         NewCustomerTimerFloat += Time.deltaTime;
 
-        if (NewCustomerTimerFloat >= 2)
+        if (NewCustomerTimerFloat >= ThresholdFloat)
         {
-            NewCustomerTimerFloat = 0;
-            CreateCustomerVoid();
+            if (ThresholdFloat > 0)
+            {
+                NewCustomerTimerFloat = 0;
+                CreateCustomerVoid();
+            }
+
+            ThresholdFloat = Random.Range(1, 5);
+
         }
 
         for (int i = 0; i < CustomerList.Count; i++)
