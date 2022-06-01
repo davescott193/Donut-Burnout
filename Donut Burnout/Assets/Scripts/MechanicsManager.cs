@@ -101,6 +101,12 @@ public class MechanicsManager : MonoBehaviour
             {
                 CustomerList[i].WaitTimerFloat += Time.deltaTime;
 
+                if (CustomerList[i].PositionTransform)
+                {
+                    Quaternion rotationQuaternion = Quaternion.LookRotation(CustomerList[i].PositionTransform.forward);
+                    CustomerList[i].CustomerTransform.rotation = Quaternion.Lerp(CustomerList[i].CustomerTransform.rotation, rotationQuaternion, Time.deltaTime);
+                }
+
                 if (CustomerList[i].WaitTimerFloat >= CustomerList[i].WaitThresholdFloat)
                 {
                     CustomerList[i].CustomerStatusInt++;
