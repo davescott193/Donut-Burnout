@@ -95,7 +95,7 @@ public class MechanicsManager : MonoBehaviour
 
         for (int i = 0; i < CustomerList.Count; i++)
         {
-            if (CustomerList[i].CustomerStatusInt == 0 || Vector3.Distance(CustomerList[i].CustomerTransform.position, CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination) <= (CustomerList[i].CustomerStatusInt == 3 ? 5 : 1f))
+            if (CustomerList[i].CustomerStatusInt == 0 || Vector3.Distance(CustomerList[i].CustomerTransform.position, CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination) <= (CustomerList[i].CustomerStatusInt == 3 ? 5 : 2f))
             {
                 CustomerList[i].WaitTimerFloat += Time.deltaTime;
 
