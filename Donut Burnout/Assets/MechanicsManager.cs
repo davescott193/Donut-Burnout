@@ -38,6 +38,12 @@ public class MechanicsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            GameManager.instance.ChangeScene(0);
+        }
+
         NewCustomerTimerFloat += Time.deltaTime;
 
         if (NewCustomerTimerFloat >= ThresholdFloat)
@@ -48,7 +54,7 @@ public class MechanicsManager : MonoBehaviour
                 CreateCustomerVoid();
             }
 
-            ThresholdFloat = Random.Range(1, 5);
+            ThresholdFloat = Random.Range(2, 6);
 
         }
 
