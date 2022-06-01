@@ -11,6 +11,7 @@ public class MechanicsManager : MonoBehaviour
     public Transform TablePositionsTransform;
 
     public GameObject CustomerPrefab;
+    public GameObject PlatePrefab;
 
     List<CustomerData> CustomerList = new List<CustomerData>();
     public float CustomerTimerFloat;
@@ -20,6 +21,9 @@ public class MechanicsManager : MonoBehaviour
     {
         public Transform CustomerTransform;
         public Transform PositionTransform;
+
+        public Transform FoodTransform;
+        public Transform PlateTransform;
 
         public int CustomerStatusInt;
         public float WaitTimerFloat;
@@ -93,7 +97,7 @@ public class MechanicsManager : MonoBehaviour
 
         for (int i = 0; i < CustomerList.Count; i++)
         {
-            if (CustomerList[i].CustomerStatusInt == 0 || Vector3.Distance(CustomerList[i].CustomerTransform.position, CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination) <= (CustomerList[i].CustomerStatusInt == 3 ? 5 : 2f))
+            if (CustomerList[i].CustomerStatusInt == 0 || Vector3.Distance(CustomerList[i].CustomerTransform.position, CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination) <= 2)
             {
                 CustomerList[i].WaitTimerFloat += Time.deltaTime;
 
@@ -110,12 +114,19 @@ public class MechanicsManager : MonoBehaviour
 
                     if (CustomerList[i].CustomerStatusInt == 2)
                     {
+                        CustomerList[i].PlateTransform = Instantiate(PlatePrefab, CustomerList[i].CustomerTransform).transform;
+                        CustomerList[i].PlateTransform.position += (CustomerList[i].CustomerTransform.forward * 0.5f) - Vector3.up;
+
+                        CustomerList[i].FoodTransform = Instantiate(GameManager.instance.FoodList[Random.Range(0, GameManager.instance.FoodList.Count)], CustomerList[i].PlateTransform).transform;
+
                         CustomerList[i].PositionTransform = ReturnRandomChild(TablePositionsTransform);
                         CustomerList[i].WaitThresholdFloat = Random.Range(4f, 8);
                     }
 
                     if (CustomerList[i].CustomerStatusInt == 3)
                     {
+                        Destroy(CustomerList[i].FoodTransform.gameObject);
+                        CustomerList[i].PlateTransform.SetParent(null, true);
                         CustomerList[i].PositionTransform = ReturnRandomChild(EntryPositionsTransform);
                         CustomerList[i].WaitThresholdFloat = 0;
                     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 //using UnityEngine.Rendering.PostProcessing;
 
 
@@ -38,6 +39,8 @@ public class GameManager : MonoBehaviour
     Coroutine LoadingCoroutine;
     // public PostProcessResources postProcessResources;
 
+    public List<GameObject> FoodList = new List<GameObject>();
+
     [System.Serializable]
     public class ToggleData
     {
@@ -70,8 +73,15 @@ public class GameManager : MonoBehaviour
                 PlayerPrefs.SetInt("Shadows", 1);
             }
 
+            string[] searchedAssetsArray = AssetDatabase.FindAssets("", new[] { "Assets/Resources/Food" });
 
+            for (int i = 0; i < searchedAssetsArray.Length; i++)
+            {
+                string assetPathString = AssetDatabase.GUIDToAssetPath(searchedAssetsArray[i]);
+                FoodList.Add((GameObject)AssetDatabase.LoadAssetAtPath(assetPathString, typeof(GameObject)));
+            }
         }
+
         firstBool = true;
         ChangeScene(0);
     }
