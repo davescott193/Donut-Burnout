@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -28,6 +28,8 @@ public class MechanicsManager : MonoBehaviour
         public int CustomerStatusInt;
         public float WaitTimerFloat;
         public float WaitThresholdFloat;
+
+        public bool TurningBool;
 
     }
 
@@ -99,13 +101,23 @@ public class MechanicsManager : MonoBehaviour
         {
             if (CustomerList[i].CustomerStatusInt == 0 || Vector3.Distance(CustomerList[i].CustomerTransform.position, CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination) <= 2)
             {
-                CustomerList[i].WaitTimerFloat += Time.deltaTime;
-
-                if (CustomerList[i].PositionTransform)
+                if (CustomerList[i].TurningBool)
                 {
                     Quaternion rotationQuaternion = Quaternion.LookRotation(CustomerList[i].PositionTransform.forward);
-                    CustomerList[i].CustomerTransform.rotation = Quaternion.Lerp(CustomerList[i].CustomerTransform.rotation, rotationQuaternion, Time.deltaTime);
+                    CustomerList[i].CustomerTransform.rotation = Quaternion.Lerp(CustomerList[i].CustomerTransform.rotation, rotationQuaternion, 2 * Time.deltaTime);
+
+                    // Debug.Log(Vector3.Dot(CustomerList[i].CustomerTransform.forward, CustomerList[i].PositionTransform.forward));
+                    if (Vector3.Dot(CustomerList[i].CustomerTransform.forward, CustomerList[i].PositionTransform.forward) < 0.98f)
+                        continue;
+
+
+                    CustomerList[i].PlateTransform.position += (CustomerList[i].CustomerTransform.forward * 0.5f);
+                    CustomerList[i].PlateTransform.SetParent(null, true);
+
+                    CustomerList[i].TurningBool = false;
                 }
+
+                CustomerList[i].WaitTimerFloat += Time.deltaTime;
 
                 if (CustomerList[i].WaitTimerFloat >= CustomerList[i].WaitThresholdFloat)
                 {
@@ -127,12 +139,13 @@ public class MechanicsManager : MonoBehaviour
 
                         CustomerList[i].PositionTransform = ReturnRandomChild(TablePositionsTransform);
                         CustomerList[i].WaitThresholdFloat = Random.Range(4f, 8);
+                        CustomerList[i].TurningBool = true;
                     }
 
                     if (CustomerList[i].CustomerStatusInt == 3)
                     {
                         Destroy(CustomerList[i].FoodTransform.gameObject);
-                        CustomerList[i].PlateTransform.SetParent(null, true);
+
                         CustomerList[i].PositionTransform = ReturnRandomChild(EntryPositionsTransform);
                         CustomerList[i].WaitThresholdFloat = 0;
                     }
