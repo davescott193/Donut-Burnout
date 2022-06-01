@@ -83,13 +83,11 @@ public class MechanicsManager : MonoBehaviour
 
         if (CustomerTimerFloat >= CustomerThresholdFloat)
         {
-            if (CustomerThresholdFloat > 0)
-            {
-                CustomerTimerFloat = 0;
-                CreateCustomerVoid();
-            }
+            CustomerTimerFloat = 0;
+            CreateCustomerVoid();
 
-            CustomerThresholdFloat = Random.Range(2, 6);
+
+            CustomerThresholdFloat = Random.Range(3, 6);
 
         }
 
@@ -102,22 +100,24 @@ public class MechanicsManager : MonoBehaviour
                 if (CustomerList[i].WaitTimerFloat >= CustomerList[i].WaitThresholdFloat)
                 {
                     CustomerList[i].CustomerStatusInt++;
-                    CustomerList[i].WaitThresholdFloat = Random.Range(0.5f, 3);
                     CustomerList[i].WaitTimerFloat = 0;
 
                     if (CustomerList[i].CustomerStatusInt == 1)
                     {
                         CustomerList[i].PositionTransform = ReturnRandomChild(CounterPositionsTransform);
+                        CustomerList[i].WaitThresholdFloat = Random.Range(0.5f, 3);
                     }
 
                     if (CustomerList[i].CustomerStatusInt == 2)
                     {
                         CustomerList[i].PositionTransform = ReturnRandomChild(TablePositionsTransform);
+                        CustomerList[i].WaitThresholdFloat = Random.Range(4f, 8);
                     }
 
                     if (CustomerList[i].CustomerStatusInt == 3)
                     {
                         CustomerList[i].PositionTransform = ReturnRandomChild(EntryPositionsTransform);
+                        CustomerList[i].WaitThresholdFloat = 0;
                     }
 
                     CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination = CustomerList[i].PositionTransform.position;
