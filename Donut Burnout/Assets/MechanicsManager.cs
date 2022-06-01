@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class MechanicsManager : MonoBehaviour
 {
@@ -12,13 +13,24 @@ public class MechanicsManager : MonoBehaviour
     public GameObject CustomerPrefab;
 
     List<CustomerData> CustomerList = new List<CustomerData>();
-    public float NewCustomerTimerFloat;
-    public float ThresholdFloat;
+    public float CustomerTimerFloat;
+    public float CustomerThresholdFloat;
 
     public class CustomerData
     {
         public Transform CustomerTransform;
         public int CustomerStatusInt;
+        public float WaitTimerFloat;
+        public float WaitThresholdFloat;
+
+    }
+
+    private void Awake()
+    {
+        if (!GameManager.instance)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
     Transform ReturnRandomChild(Transform positionsTransform)
@@ -44,17 +56,17 @@ public class MechanicsManager : MonoBehaviour
             GameManager.instance.ChangeScene(0);
         }
 
-        NewCustomerTimerFloat += Time.deltaTime;
+        CustomerTimerFloat += Time.deltaTime;
 
-        if (NewCustomerTimerFloat >= ThresholdFloat)
+        if (CustomerTimerFloat >= CustomerThresholdFloat)
         {
-            if (ThresholdFloat > 0)
+            if (CustomerThresholdFloat > 0)
             {
-                NewCustomerTimerFloat = 0;
+                CustomerTimerFloat = 0;
                 CreateCustomerVoid();
             }
 
-            ThresholdFloat = Random.Range(2, 6);
+            CustomerThresholdFloat = Random.Range(2, 6);
 
         }
 
@@ -62,27 +74,34 @@ public class MechanicsManager : MonoBehaviour
         {
             if (CustomerList[i].CustomerStatusInt == 0 || Vector3.Distance(CustomerList[i].CustomerTransform.position, CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination) <= 1f)
             {
-                CustomerList[i].CustomerStatusInt++;
+                CustomerList[i].WaitTimerFloat += Time.deltaTime;
 
-                if (CustomerList[i].CustomerStatusInt == 1)
+                if (CustomerList[i].WaitTimerFloat >= CustomerList[i].WaitThresholdFloat)
                 {
-                    CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination = ReturnRandomChild(CounterPositionsTransform).position;
-                }
+                    CustomerList[i].CustomerStatusInt++;
+                    CustomerList[i].WaitThresholdFloat = Random.Range(0.5f, 3);
+                    CustomerList[i].WaitTimerFloat = 0;
 
-                if (CustomerList[i].CustomerStatusInt == 2)
-                {
-                    CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination = ReturnRandomChild(TablePositionsTransform).position;
-                }
+                    if (CustomerList[i].CustomerStatusInt == 1)
+                    {
+                        CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination = ReturnRandomChild(CounterPositionsTransform).position;
+                    }
 
-                if (CustomerList[i].CustomerStatusInt == 3)
-                {
-                    CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination = ReturnRandomChild(EntryPositionsTransform).position;
-                }
+                    if (CustomerList[i].CustomerStatusInt == 2)
+                    {
+                        CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination = ReturnRandomChild(TablePositionsTransform).position;
+                    }
 
-                if (CustomerList[i].CustomerStatusInt == 4)
-                {
-                    Destroy(CustomerList[i].CustomerTransform.gameObject);
-                    CustomerList.RemoveAt(i);
+                    if (CustomerList[i].CustomerStatusInt == 3)
+                    {
+                        CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination = ReturnRandomChild(EntryPositionsTransform).position;
+                    }
+
+                    if (CustomerList[i].CustomerStatusInt == 4)
+                    {
+                        Destroy(CustomerList[i].CustomerTransform.gameObject);
+                        CustomerList.RemoveAt(i);
+                    }
                 }
             }
         }
