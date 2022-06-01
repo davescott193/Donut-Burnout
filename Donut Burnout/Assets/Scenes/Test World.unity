@@ -1912,6 +1912,7 @@ MonoBehaviour:
   CounterPositionsTransform: {fileID: 984094615}
   TablePositionsTransform: {fileID: 2072464141}
   CustomerPrefab: {fileID: 8636119438045633910, guid: 03496a0e0f28944e9b7e3b6f1650565e, type: 3}
+  PlatePrefab: {fileID: 8864188452142992969, guid: c7985f81a120547feafc588b8ae5ab76, type: 3}
   CustomerTimerFloat: 0
   CustomerThresholdFloat: 0
 --- !u!4 &1122351632
