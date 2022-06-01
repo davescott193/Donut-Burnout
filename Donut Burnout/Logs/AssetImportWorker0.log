@@ -18,6 +18,7 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker0
 -projectPath
+<<<<<<< HEAD
 /Users/allister/Desktop/Unity Projects/Other Users/Donut Burnout/Donut Burnout
 -logFile
 Logs/AssetImportWorker0.log
@@ -31,6 +32,21 @@ Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/allister/Desktop/Unity Projects/Other Users/Donut Burnout/Donut Burnout/Assets
+=======
+D:/Donut-Burnout/Donut-Burnout/Donut Burnout
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52981
+Successfully changed project path to: D:/Donut-Burnout/Donut-Burnout/Donut Burnout
+D:/Donut-Burnout/Donut-Burnout/Donut Burnout
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 22.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Donut-Burnout/Donut-Burnout/Donut Burnout/Assets
+>>>>>>> main
 GfxDevice: creating device client; threaded=0
 2022-06-01 12:52:35.155 Unity[939:9317] Color LCD preferred device: Intel(R) Iris(TM) Graphics 6000 (low power)
 2022-06-01 12:52:35.155 Unity[939:9317] Metal devices available: 1
@@ -38,6 +54,7 @@ GfxDevice: creating device client; threaded=0
 2022-06-01 12:52:35.156 Unity[939:9317] Using device Intel(R) Iris(TM) Graphics 6000 (low power)
 Initializing Metal device caps: Intel(R) Iris(TM) Graphics 6000
 Initialize mono
+<<<<<<< HEAD
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/MonoBleedingEdge/etc'
@@ -54,10 +71,29 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1540ms)
 		BeginReloadAssembly (219ms)
+=======
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56344
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002074 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 22.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.440 seconds
+Domain Reload Profiling:
+	ReloadAssembly (440ms)
+		BeginReloadAssembly (53ms)
+>>>>>>> main
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 			CreateAndSetChildDomain (2ms)
 		EndReloadAssembly (1163ms)
 			LoadAssemblies (227ms)
@@ -73,12 +109,30 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (69ms)
 				ProcessInitializeOnLoadAttributes (246ms)
 				ProcessInitializeOnLoadMethodAttributes (81ms)
+=======
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (330ms)
+			LoadAssemblies (50ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (111ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (119ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (23ms)
+				BeforeProcessingInitializeOnLoad (12ms)
+				ProcessInitializeOnLoadAttributes (60ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+>>>>>>> main
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.009106 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /Users/allister/Desktop/Unity Projects/Other Users/Donut Burnout/Donut Burnout/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
@@ -90,10 +144,24 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (2693ms)
 		BeginReloadAssembly (290ms)
+=======
+Registered in 0.001959 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Donut-Burnout\Donut-Burnout\Donut Burnout\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.753 seconds
+Domain Reload Profiling:
+	ReloadAssembly (753ms)
+		BeginReloadAssembly (120ms)
+>>>>>>> main
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 			CreateAndSetChildDomain (58ms)
 		EndReloadAssembly (2256ms)
 			LoadAssemblies (248ms)
@@ -307,18 +375,36 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (78ms)
 			SetupLoadedEditorAssemblies (679ms)
+=======
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (586ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (197ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (224ms)
+>>>>>>> main
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (0ms)
+<<<<<<< HEAD
 				BeforeProcessingInitializeOnLoad (223ms)
 				ProcessInitializeOnLoadAttributes (428ms)
 				ProcessInitializeOnLoadMethodAttributes (18ms)
 				AfterProcessingInitializeOnLoad (2ms)
+=======
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (147ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (7ms)
+>>>>>>> main
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (15ms)
 Platform modules already initialized, skipping
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1509 Unused Serialized files (Serialized files now loaded: 0)
@@ -549,6 +635,19 @@ System memory in use after: 194.8 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2051.
 Total: 4.548240 ms (FindLiveObjects: 0.197473 ms CreateObjectMapping: 0.070477 ms MarkObjects: 4.241151 ms  DeleteObjects: 0.037614 ms)
+=======
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1510 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.7 MB.
+System memory in use after: 68.8 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1946.
+Total: 1.846800 ms (FindLiveObjects: 0.094400 ms CreateObjectMapping: 0.037000 ms MarkObjects: 1.671900 ms  DeleteObjects: 0.043000 ms)
+>>>>>>> main
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -562,6 +661,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   Time since last request: 261.714582 seconds.
   path: Assets/Prefabs/Position.prefab
   artifactKey: Guid(cea177df03d344c82a913cb9b546996f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -876,17 +976,36 @@ Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /Users/allister/Desktop/Unity Projects/Other Users/Donut Burnout/Donut Burnout/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
 Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+=======
+  path: Assets/Materials
+  artifactKey: Guid(adf314be84c46234991fa78ca50595cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(adf314be84c46234991fa78ca50595cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab14a641ee8ace679ab33a779447afa3') in 0.006468 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001915 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Donut-Burnout\Donut-Burnout\Donut Burnout\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+>>>>>>> main
 Preloading 0 native plugins for Editor in 0.00 ms.
 2022-06-01 13:23:03.503 Unity[939:9317] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000032320d0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Mono: successfully reloaded assembly
 - Completed reload, in  1.983 seconds
 Domain Reload Profiling:
+<<<<<<< HEAD
 	ReloadAssembly (1984ms)
 		BeginReloadAssembly (185ms)
+=======
+	ReloadAssembly (707ms)
+		BeginReloadAssembly (89ms)
+>>>>>>> main
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 			CreateAndSetChildDomain (79ms)
 		EndReloadAssembly (1689ms)
 			LoadAssemblies (168ms)
@@ -895,26 +1014,52 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (77ms)
 			SetupLoadedEditorAssemblies (603ms)
+=======
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (571ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (193ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (208ms)
+>>>>>>> main
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (0ms)
+<<<<<<< HEAD
 				BeforeProcessingInitializeOnLoad (209ms)
 				ProcessInitializeOnLoadAttributes (365ms)
 				ProcessInitializeOnLoadMethodAttributes (16ms)
 				AfterProcessingInitializeOnLoad (2ms)
+=======
+				BeforeProcessingInitializeOnLoad (54ms)
+				ProcessInitializeOnLoadAttributes (136ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (7ms)
+>>>>>>> main
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (13ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+<<<<<<< HEAD
 Unloading 1509 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 195.7 MB.
 System memory in use after: 195.9 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2071.
 Total: 4.964406 ms (FindLiveObjects: 0.178978 ms CreateObjectMapping: 0.063322 ms MarkObjects: 4.693064 ms  DeleteObjects: 0.027642 ms)
+=======
+Unloading 1504 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.5 MB.
+System memory in use after: 68.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1949.
+Total: 1.878900 ms (FindLiveObjects: 0.094900 ms CreateObjectMapping: 0.037500 ms MarkObjects: 1.732800 ms  DeleteObjects: 0.013300 ms)
+>>>>>>> main
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -928,6 +1073,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   Time since last request: 351.995338 seconds.
   path: Assets/Prefabs/Position.prefab
   artifactKey: Guid(cea177df03d344c82a913cb9b546996f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -1856,3 +2002,34 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+=======
+  Time since last request: 75.674459 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(f27b8f30be08f59438ab8ffcf95852b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(f27b8f30be08f59438ab8ffcf95852b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b8d1128b3d7323ab102d90c6fe8e8c') in 0.077170 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.568622 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(ecb1832a63b94e841a8acab47338db24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(ecb1832a63b94e841a8acab47338db24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e12d28d09881a64ca21a4eb3e1e44e46') in 0.005796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.171176 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b576302efd4b4c7404043130b735342') in 0.005910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.205195 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(f8852b569c204184f98f8149716d7193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(f8852b569c204184f98f8149716d7193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91bad8c646588876ad477dba64da240e') in 0.005338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.735130 seconds.
+  path: Assets/Materials/New Material.mat
+  artifactKey: Guid(9057374bd94928f4db01f070769f8f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material.mat using Guid(9057374bd94928f4db01f070769f8f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd6c245dcf6b74efbba0aedc183e84b1') in 0.023999 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+>>>>>>> main
