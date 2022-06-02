@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Mozart_UI_TESTING.unity
+- path: Assets/Scenes/Test World.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
