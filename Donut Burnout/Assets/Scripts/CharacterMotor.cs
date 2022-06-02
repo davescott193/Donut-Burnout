@@ -98,5 +98,36 @@ public class CharacterMotor : MonoBehaviour
             m_velocity.y = -1.0f;
         }
 
+        //Taking Damage + Damage Overtime
+
+        void DamageStress(int damage)
+        {
+            currentStress -= damage;
+        }
+
+        void HealStress(int heal)
+        {
+            currentStress += heal;
+        }
+
+        IEnumerator DamageOverTimeCoroutine(float damageAmount, float duration)
+        {
+            float amountDamage = 0;
+            duration = 100;
+            damageAmount = 10;
+            float damagePerLoop = damageAmount / duration;
+
+            while (amountDamage < damageAmount)
+            {
+                currentStress -= damagePerLoop;
+                Debug.Log("Taking Damage Right Now");
+                amountDamage += damagePerLoop;
+                yield return new WaitForSeconds(1f);
+            }
+        }
+
     }
+
+
+
 }
