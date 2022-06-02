@@ -100,6 +100,8 @@ public class CharacterMotor : MonoBehaviour
 
         //Taking Damage + Damage Overtime
 
+        StartCoroutine(DamageOverTimeCoroutine(0, 0));
+
         void DamageStress(int damage)
         {
             currentStress -= damage;
@@ -113,8 +115,8 @@ public class CharacterMotor : MonoBehaviour
         IEnumerator DamageOverTimeCoroutine(float damageAmount, float duration)
         {
             float amountDamage = 0;
-            duration = 100;
-            damageAmount = 10;
+            duration = 3000;
+            damageAmount = 2;
             float damagePerLoop = damageAmount / duration;
 
             while (amountDamage < damageAmount)
