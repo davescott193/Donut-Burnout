@@ -1,0 +1,408 @@
+Unity Editor version:    2020.3.33f1 (915a7af8b0d5)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.4 (Build 21F79)
+Darwin version:          21.5.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        8192 MB
+Using pre-set license
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/allister/Unity Projects/Other Users/Donut Burnout/Donut Burnout
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49858
+Successfully changed project path to: /Users/allister/Unity Projects/Other Users/Donut Burnout/Donut Burnout
+/Users/allister/Unity Projects/Other Users/Donut Burnout/Donut Burnout
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 269.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/allister/Unity Projects/Other Users/Donut Burnout/Donut Burnout/Assets
+GfxDevice: creating device client; threaded=0
+2022-06-17 09:09:26.389 Unity[2840:30678] Color LCD preferred device: Intel(R) Iris(TM) Graphics 6000 (low power)
+2022-06-17 09:09:26.389 Unity[2840:30678] Metal devices available: 1
+2022-06-17 09:09:26.389 Unity[2840:30678] 0: Intel(R) Iris(TM) Graphics 6000 (low power)
+2022-06-17 09:09:26.390 Unity[2840:30678] Using device Intel(R) Iris(TM) Graphics 6000 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Graphics 6000
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56840
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.003547 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 49.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.429 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1429ms)
+		BeginReloadAssembly (515ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (3ms)
+		EndReloadAssembly (802ms)
+			LoadAssemblies (525ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (299ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (314ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (49ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (161ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.026867 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/allister/Unity Projects/Other Users/Donut Burnout/Donut Burnout/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.861 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1866ms)
+		BeginReloadAssembly (414ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (1350ms)
+			LoadAssemblies (463ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (436ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (423ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (299ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Validating Project structure ... 0.004781 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.002974 seconds.
+Application.AssetDatabase Initial Script Refresh Start
+RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
+RefreshProfiler: Total: 0.000ms
+Application.AssetDatabase Initial Script Refresh End
+Application.AssetDatabase.Refresh Start
+Application.AssetDatabase.Refresh End
+RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.33f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Initializing Unity extensions:
+2022-06-17 09:09:37.541 Unity[2840:30678] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000012c6ae0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2022-06-17 09:09:37.545 Unity[2840:30678] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000012d5490 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+========================================================================
+Worker process is ready to serve import requests
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1516 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 178.1 MB.
+System memory in use after: 177.3 MB.
+
+Unloading 84 unused Assets to reduce memory usage. Loaded Objects now: 1994.
+Total: 4.369765 ms (FindLiveObjects: 0.173360 ms CreateObjectMapping: 0.058320 ms MarkObjects: 3.435143 ms  DeleteObjects: 0.701584 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Prefabs/Generic Button.prefab
+  artifactKey: Guid(27388c12fe27a4780971b7f50915b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Generic Button.prefab using Guid(27388c12fe27a4780971b7f50915b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e755e748c6b2b65591df28ce311e796c') in 1.554443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003526 seconds.
+  path: Assets/Prefabs/Gameplay
+  artifactKey: Guid(0da806b2c5f8e4713acbd7150bd62954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gameplay using Guid(0da806b2c5f8e4713acbd7150bd62954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cca0d988ffd8b20718f21d8cd4d309c') in 0.006499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000922 seconds.
+  path: Assets/Prefabs/Scenery/Table.prefab
+  artifactKey: Guid(dd7ce922df40443809b0f08ae7bdd199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenery/Table.prefab using Guid(dd7ce922df40443809b0f08ae7bdd199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86eae07a68b06f170021db5ede8e8dfd') in 0.158543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000782 seconds.
+  path: Assets/Prefabs/Gameplay/Player.prefab
+  artifactKey: Guid(971aea77fa3294a70b7784b7da2ea488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gameplay/Player.prefab using Guid(971aea77fa3294a70b7784b7da2ea488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3696d72797aff698a98cb58ac7c1062d') in 0.038541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000539 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(f8883f26867fdb3488d49da20fb9f3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(f8883f26867fdb3488d49da20fb9f3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6793e683a9a44cf16bde600f0ba4928') in 0.006429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000570 seconds.
+  path: Assets/Prefabs/Gameplay/Customer.prefab
+  artifactKey: Guid(03496a0e0f28944e9b7e3b6f1650565e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gameplay/Customer.prefab using Guid(03496a0e0f28944e9b7e3b6f1650565e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b99db26c83f72fcc44f60d34109d113f') in 0.042879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000483 seconds.
+  path: Assets/Prefabs/Scenery
+  artifactKey: Guid(d59f4a49c527842838e1044559988816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenery using Guid(d59f4a49c527842838e1044559988816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '375d00be302124ed87ecd7cfe8aac33f') in 0.006432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000441 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(22f397523be2e452ea56d96af2016140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(22f397523be2e452ea56d96af2016140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca57d93b30734e9e801e77cead515c06') in 0.003331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001325 seconds.
+  path: Assets/Prefabs/Gameplay/Position.prefab
+  artifactKey: Guid(cea177df03d344c82a913cb9b546996f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gameplay/Position.prefab using Guid(cea177df03d344c82a913cb9b546996f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79fa51b80c601ee639a820b97438766f') in 0.027007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000855 seconds.
+  path: Assets/Prefabs/Gameplay/Plate.prefab
+  artifactKey: Guid(c7985f81a120547feafc588b8ae5ab76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gameplay/Plate.prefab using Guid(c7985f81a120547feafc588b8ae5ab76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ba9242634e3cac40e8e3ceef172d459') in 0.027077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.140627 seconds.
+  path: Assets/Resources/Cash Register
+  artifactKey: Guid(2ebaf70fc8d725e448797dfa93f99b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Cash Register using Guid(2ebaf70fc8d725e448797dfa93f99b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000429 seconds  code(4) message(Build asset version error: assets/resources/cash register.meta in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '2022-06-16T21:05:21Z')
+  ERROR: Build asset version error: assets/resources/cash register.meta in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '2022-06-16T21:05:21Z'
+========================================================================
+Received Import Request.
+  Time since last request: 1.112150 seconds.
+  path: Assets/Resources/Jukebox
+  artifactKey: Guid(c9d36156b4f678e469168c89ce2b2540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Jukebox using Guid(c9d36156b4f678e469168c89ce2b2540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000388 seconds  code(4) message(Build asset version error: assets/resources/jukebox.meta in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '2022-06-16T21:05:21Z')
+  ERROR: Build asset version error: assets/resources/jukebox.meta in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '2022-06-16T21:05:21Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.531093 seconds.
+  path: Assets/Resources/Laptop
+  artifactKey: Guid(ff8311c2498475c43b16a8e35b77fc9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Laptop using Guid(ff8311c2498475c43b16a8e35b77fc9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000925 seconds  code(4) message(Build asset version error: assets/resources/laptop.meta in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '2022-06-16T21:05:21Z')
+  ERROR: Build asset version error: assets/resources/laptop.meta in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '2022-06-16T21:05:21Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.442143 seconds.
+  path: Assets/Resources/Modular Pieces
+  artifactKey: Guid(4364cb9153fb3034295736f77d2196de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Modular Pieces using Guid(4364cb9153fb3034295736f77d2196de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000470 seconds  code(4) message(Build asset version error: assets/resources/modular pieces.meta in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '2022-06-16T21:05:21Z')
+  ERROR: Build asset version error: assets/resources/modular pieces.meta in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '2022-06-16T21:05:21Z'
+========================================================================
+Received Import Request.
+  Time since last request: 1.075770 seconds.
+  path: Assets/Resources/Stool
+  artifactKey: Guid(8a288d3d45c23554791f7fa0757b3901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Stool using Guid(8a288d3d45c23554791f7fa0757b3901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000453 seconds  code(4) message(Build asset version error: assets/resources/stool.meta in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '2022-06-16T21:05:21Z')
+  ERROR: Build asset version error: assets/resources/stool.meta in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '2022-06-16T21:05:21Z'
+========================================================================
+Received Import Request.
+  Time since last request: 7.512913 seconds.
+  path: Assets/Resources/Stool
+  artifactKey: Guid(8a288d3d45c23554791f7fa0757b3901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Stool using Guid(8a288d3d45c23554791f7fa0757b3901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000347 seconds  code(4) message(Build asset version error: assets/resources/stool.meta in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z')
+  ERROR: Build asset version error: assets/resources/stool.meta in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+========================================================================
+Received Import Request.
+  Time since last request: 2.784883 seconds.
+  path: Assets/Prefabs/Scenery/Table.prefab
+  artifactKey: Guid(dd7ce922df40443809b0f08ae7bdd199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Scenery/Table.prefab using Guid(dd7ce922df40443809b0f08ae7bdd199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86eae07a68b06f170021db5ede8e8dfd') in 0.012294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.107133 seconds.
+  path: Assets/Resources/Laptop
+  artifactKey: Guid(ff8311c2498475c43b16a8e35b77fc9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Laptop using Guid(ff8311c2498475c43b16a8e35b77fc9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000412 seconds  code(4) message(Build asset version error: assets/resources/laptop.meta in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z')
+  ERROR: Build asset version error: assets/resources/laptop.meta in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.088401 seconds.
+  path: Assets/Resources/Laptop/Laptop.fbx
+  artifactKey: Guid(e90a73c2286b35b45ae0f220f69627a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Laptop/Laptop.fbx using Guid(e90a73c2286b35b45ae0f220f69627a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.323926 seconds  code(4) message(Build asset version error: assets/resources/laptop/laptop.fbx in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z')
+  ERROR: Build asset version error: assets/resources/laptop/laptop.fbx in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Resources/Laptop/Laptop.mat
+  artifactKey: Guid(5276365ea6bc4434c9cead2183a252dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Laptop/Laptop.mat using Guid(5276365ea6bc4434c9cead2183a252dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.124785 seconds  code(4) message(Build asset version error: assets/resources/laptop/laptop.mat in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z')
+  ERROR: Build asset version error: assets/resources/laptop/laptop.mat in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Resources/Laptop/Laptop_lambert1_OcclusionRoughnessMetallic.png
+  artifactKey: Guid(f701857519f4b4045a1b016dd3442da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Laptop/Laptop_lambert1_OcclusionRoughnessMetallic.png using Guid(f701857519f4b4045a1b016dd3442da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 1.390387 seconds  code(4) message(Build asset version error: assets/resources/laptop/laptop_lambert1_occlusionroughnessmetallic.png in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z')
+  ERROR: Build asset version error: assets/resources/laptop/laptop_lambert1_occlusionroughnessmetallic.png in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Resources/Laptop/Laptop_lambert1_Emissive.png
+  artifactKey: Guid(fe0b466a809328046b328e1ff70d5c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Laptop/Laptop_lambert1_Emissive.png using Guid(fe0b466a809328046b328e1ff70d5c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.015014 seconds  code(4) message(Build asset version error: assets/resources/laptop/laptop_lambert1_emissive.png in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z')
+  ERROR: Build asset version error: assets/resources/laptop/laptop_lambert1_emissive.png in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.001153 seconds.
+  path: Assets/Resources/Laptop/Laptop_lambert1_BaseColor.png
+  artifactKey: Guid(df8f47cdeea3600428c76dc4bf761a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Laptop/Laptop_lambert1_BaseColor.png using Guid(df8f47cdeea3600428c76dc4bf761a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.019554 seconds  code(4) message(Build asset version error: assets/resources/laptop/laptop_lambert1_basecolor.png in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z')
+  ERROR: Build asset version error: assets/resources/laptop/laptop_lambert1_basecolor.png in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000666 seconds.
+  path: Assets/Resources/Laptop/Laptop_lambert1_Normal.png
+  artifactKey: Guid(b55c6fb03c9ae444db20ae9a75ebc1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Laptop/Laptop_lambert1_Normal.png using Guid(b55c6fb03c9ae444db20ae9a75ebc1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.037537 seconds  code(4) message(Build asset version error: assets/resources/laptop/laptop_lambert1_normal.png in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z')
+  ERROR: Build asset version error: assets/resources/laptop/laptop_lambert1_normal.png in SourceAssetDB has modification time of '2022-06-16T20:52:57Z' while content on disk has modification time of '0001-01-01T00:00:00Z'
+========================================================================
+Received Import Request.
+  Time since last request: 5.268635 seconds.
+  path: Assets/Prefabs/Gameplay/Customer.prefab
+  artifactKey: Guid(03496a0e0f28944e9b7e3b6f1650565e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gameplay/Customer.prefab using Guid(03496a0e0f28944e9b7e3b6f1650565e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b99db26c83f72fcc44f60d34109d113f') in 0.024082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000478 seconds.
+  path: Assets/Prefabs/Gameplay/Player.prefab
+  artifactKey: Guid(971aea77fa3294a70b7784b7da2ea488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gameplay/Player.prefab using Guid(971aea77fa3294a70b7784b7da2ea488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3696d72797aff698a98cb58ac7c1062d') in 0.037337 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000518 seconds.
+  path: Assets/Prefabs/Gameplay/Position.prefab
+  artifactKey: Guid(cea177df03d344c82a913cb9b546996f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gameplay/Position.prefab using Guid(cea177df03d344c82a913cb9b546996f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79fa51b80c601ee639a820b97438766f') in 0.029880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000384 seconds.
+  path: Assets/Prefabs/Gameplay/Plate.prefab
+  artifactKey: Guid(c7985f81a120547feafc588b8ae5ab76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gameplay/Plate.prefab using Guid(c7985f81a120547feafc588b8ae5ab76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ba9242634e3cac40e8e3ceef172d459') in 0.033969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 288.661943 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(f8883f26867fdb3488d49da20fb9f3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(f8883f26867fdb3488d49da20fb9f3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6793e683a9a44cf16bde600f0ba4928') in 0.009188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.048026 seconds.
+  path: Assets/Prefabs/Generic Button.prefab
+  artifactKey: Guid(27388c12fe27a4780971b7f50915b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Generic Button.prefab using Guid(27388c12fe27a4780971b7f50915b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e755e748c6b2b65591df28ce311e796c') in 0.014420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 136.812508 seconds.
+  path: Assets/Prefabs/Generic Button.prefab
+  artifactKey: Guid(27388c12fe27a4780971b7f50915b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Generic Button.prefab using Guid(27388c12fe27a4780971b7f50915b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e755e748c6b2b65591df28ce311e796c') in 0.033620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(f8883f26867fdb3488d49da20fb9f3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(f8883f26867fdb3488d49da20fb9f3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6793e683a9a44cf16bde600f0ba4928') in 0.004736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 99.696670 seconds.
+  path: Assets/Prefabs/Generic Button.prefab
+  artifactKey: Guid(27388c12fe27a4780971b7f50915b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Generic Button.prefab using Guid(27388c12fe27a4780971b7f50915b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e755e748c6b2b65591df28ce311e796c') in 0.024335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000746 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(f8883f26867fdb3488d49da20fb9f3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(f8883f26867fdb3488d49da20fb9f3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6793e683a9a44cf16bde600f0ba4928') in 0.002720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: 
+  artifactKey: Guid(085aaf4e753db4cc7b37b7aa9638300f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(085aaf4e753db4cc7b37b7aa9638300f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000093 seconds  code(3) message(Unknown asset with GUID '085aaf4e753db4cc7b37b7aa9638300f')
+  ERROR: Unknown asset with GUID '085aaf4e753db4cc7b37b7aa9638300f'
+========================================================================
+Received Import Request.
+  Time since last request: 4.345779 seconds.
+  path: Assets/Prefabs/Generic Button.prefab
+  artifactKey: Guid(27388c12fe27a4780971b7f50915b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Generic Button.prefab using Guid(27388c12fe27a4780971b7f50915b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e755e748c6b2b65591df28ce311e796c') in 0.017354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000645 seconds.
+  path: 
+  artifactKey: Guid(6c04ad4afff29496ebe40efcce982bbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(6c04ad4afff29496ebe40efcce982bbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000852 seconds  code(3) message(Unknown asset with GUID '6c04ad4afff29496ebe40efcce982bbc')
+  ERROR: Unknown asset with GUID '6c04ad4afff29496ebe40efcce982bbc'
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(f8883f26867fdb3488d49da20fb9f3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(f8883f26867fdb3488d49da20fb9f3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6793e683a9a44cf16bde600f0ba4928') in 0.002975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000766 seconds.
+  path: 
+  artifactKey: Guid(085aaf4e753db4cc7b37b7aa9638300f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(085aaf4e753db4cc7b37b7aa9638300f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000287 seconds  code(3) message(Unknown asset with GUID '085aaf4e753db4cc7b37b7aa9638300f')
+  ERROR: Unknown asset with GUID '085aaf4e753db4cc7b37b7aa9638300f'
+========================================================================
+Received Import Request.
+  Time since last request: 47.995013 seconds.
+  path: Assets/Prefabs/Generic Button.prefab
+  artifactKey: Guid(27388c12fe27a4780971b7f50915b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Generic Button.prefab using Guid(27388c12fe27a4780971b7f50915b017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e755e748c6b2b65591df28ce311e796c') in 0.024432 seconds 
