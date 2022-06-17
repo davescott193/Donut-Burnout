@@ -53,6 +53,8 @@ public class ButtonMechanics : MonoBehaviour, IPointerClickHandler, IPointerDown
     [Tooltip("Close the settings Menu")]
     public bool CloseSettingsBool;
 
+    [Tooltip("Toggles the debug on and off to show whats under the hood for developing")]
+    public bool DebugToggleBool;
 
     [Tooltip("Toggles the shadows on and off")]
     public bool ShadowsToggleBool;
@@ -79,6 +81,20 @@ public class ButtonMechanics : MonoBehaviour, IPointerClickHandler, IPointerDown
             {
                 QualitySettings.shadows = ShadowQuality.All;
                 transform.GetChild(1).GetComponent<Text>().text = "Shadows: OFF";
+            }
+        }
+
+        if (DebugToggleBool)
+        {
+            if (PlayerPrefs.GetInt("Debug") == 1)
+            {
+                QualitySettings.shadows = ShadowQuality.Disable;
+                transform.GetChild(1).GetComponent<Text>().text = "Debug Mode: ON";
+            }
+            else
+            {
+                QualitySettings.shadows = ShadowQuality.All;
+                transform.GetChild(1).GetComponent<Text>().text = "Debug Mode: OFF";
             }
         }
 
@@ -196,6 +212,12 @@ public class ButtonMechanics : MonoBehaviour, IPointerClickHandler, IPointerDown
         if (PerformanceToggleBool)
         {
             PlayerPrefs.SetInt("Performance", PlayerPrefs.GetInt("Performance") == 1 ? 0 : 1);
+            OnEnable();
+        }
+
+        if (DebugToggleBool)
+        {
+            PlayerPrefs.SetInt("Debug", PlayerPrefs.GetInt("Debug") == 1 ? 0 : 1);
             OnEnable();
         }
 

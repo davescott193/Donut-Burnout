@@ -7,6 +7,7 @@ public class CharacterMotor : MonoBehaviour
     // Headers for the unity editor for visibility
     [Header("Attached Components")]
     public CharacterController m_controller;
+    public Animator m_animator;
     public MouseLook m_look;
 
     [Header("Motion Values")]
@@ -16,8 +17,19 @@ public class CharacterMotor : MonoBehaviour
 
     [Header("Current State")]
     public Vector3 m_velocity = new Vector3(0.0f, 0.0f, 0.0f);
+
     public bool m_grounded = false;
 
+    private void Start()
+    {
+        if (PlayerPrefs.GetInt("Debug") == 1)
+        {
+            List<string> layerMaskNamesList = GameManager.ReturnLayerMaskNames(m_look.GetComponent<Camera>().cullingMask);
+            layerMaskNamesList.Add("Debug");
+            m_look.GetComponent<Camera>().cullingMask = GameManager.ReturnBitShift(layerMaskNamesList.ToArray());
+
+        }
+    }
     void Update()
     {
         float x = 0.0f;
@@ -59,6 +71,11 @@ public class CharacterMotor : MonoBehaviour
         m_velocity.z = inputMove.z * m_movespeed;
 
         m_controller.Move(m_velocity * Time.deltaTime);
+
+        m_animator.SetBool("Walk", inputMove != Vector3.zero);
+
+        if (inputMove != Vector3.zero)
+            m_animator.transform.rotation = Quaternion.Slerp(m_animator.transform.rotation, Quaternion.LookRotation(m_velocity), Time.deltaTime * 10f);
 
         if ((m_controller.collisionFlags & CollisionFlags.Below) != 0)
         {

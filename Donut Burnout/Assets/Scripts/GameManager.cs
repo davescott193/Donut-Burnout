@@ -113,6 +113,22 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = Show ? CursorLockMode.None : CursorLockMode.Locked;
     }
 
+
+    public static List<string> ReturnLayerMaskNames(LayerMask MaskRequested)
+    {
+        List<string> layers = new List<string>();
+        var bitmask = MaskRequested.value;
+
+        for (int i = 0; i < 32; i++)
+        {
+            if (((1 << i) & bitmask) != 0)
+            {
+                layers.Add(LayerMask.LayerToName(i));
+            }
+        }
+        return layers;
+    }
+
     IEnumerator ChangeSceneIEnumerator(int sceneNumber)
     {
         AnimationState animationState = AnimationChangeDirection(GetComponent<Animation>(), "Load", true, firstBool);
