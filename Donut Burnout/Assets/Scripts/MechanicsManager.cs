@@ -164,14 +164,7 @@ public class MechanicsManager : MonoBehaviour
 
                         if (CustomerList[i].QueueInt > 1)
                         {
-                            for (int j = 0; j < CustomerList.Count; j++)
-                            {
-                                if (CustomerList[i].PositionTransform == CustomerList[j].CustomerTransform && CustomerList[j].QueueInt == -1)
-                                {
-
-                                }
-                            }
-
+                            UpdateDestination(i);
                             continue;
                         }
                     }
@@ -248,10 +241,7 @@ public class MechanicsManager : MonoBehaviour
                         CustomerList[i].WaitThresholdFloat = 0;
                     }
 
-                    CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination = CustomerList[i].PositionTransform.position;
-
-                    if (CustomerList[i].QueueInt > 1)
-                        CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination -= CustomerList[i].PositionTransform.forward * 2f;
+                    UpdateDestination(i);
 
                     countInt++;
                     if (CustomerList[i].CustomerStatusInt == countInt)
@@ -268,5 +258,14 @@ public class MechanicsManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    void UpdateDestination(int i)
+    {
+        CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination = CustomerList[i].PositionTransform.position;
+
+        if (CustomerList[i].QueueInt > 1)
+            CustomerList[i].CustomerTransform.GetComponent<NavMeshAgent>().destination -= CustomerList[i].PositionTransform.forward * 2f;
+
     }
 }
