@@ -44,6 +44,7 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
+<<<<<<< HEAD
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
@@ -52,6 +53,8 @@
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.33f1</UnityVersion>
   </PropertyGroup>
+=======
+>>>>>>> parent of 4614843 (Pulling more stuff)
   <ItemGroup>
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
@@ -684,6 +687,10 @@
       <Project>{B44DE018-8D55-FF7B-ED6F-82F5A90C1487}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
+<<<<<<< HEAD
+=======
+>>>>>>> 75b9c0eb9c899e6e6ff25189d847844243b7fe35
+>>>>>>> parent of 4614843 (Pulling more stuff)
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
