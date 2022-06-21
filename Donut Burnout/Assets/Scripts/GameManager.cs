@@ -26,19 +26,21 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public AudioPool MusicPool;
-    public AudioPool SoundPool;
-
-    [Header("Audio Clip Referencing")]
+    [Header("Drag your mp3 or wav clips into here and the game will do the rest")]
     public AudioClip ButtonDownSound;
     public AudioClip ButtonUpSound;
     [Space(10)]
     public AudioClip LoadingSound;
+    [Space(10)]
+    public AudioClip MenuMusic;
+    public AudioClip GameMusic;
 
+    [Header("Other variables to just leave alone")]
+    public AudioPool MusicPool;
+    public AudioPool SoundPool;
     public Animation SceneAnimation;
     Coroutine LoadingCoroutine;
-    // public PostProcessResources postProcessResources;
-
+    [HideInInspector]
     public List<GameObject> FoodList = new List<GameObject>();
 
     [System.Serializable]
@@ -148,7 +150,7 @@ public class GameManager : MonoBehaviour
         firstBool = false;
         animationState = AnimationChangeDirection(GetComponent<Animation>(), "Load", false);
         animationState.time = 0.5f;
-        GameManager.CursorChange(true);
+        GameManager.CursorChange(sceneNumber == 0);
         LoadingCoroutine = null;
 
         // GameManager.instance.MusicPool.PlayMusic(SceneMusicList[sceneNumber]);
