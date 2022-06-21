@@ -20,6 +20,15 @@ public class CharacterMotor : MonoBehaviour
 
     public bool m_grounded = false;
 
+    //Code for Stress Bar
+
+    private Rigidbody _rb;
+
+    public Stress_UI stressBar;
+    public float maxStress = 100;
+    public float currentStress;
+
+
     private void Start()
     {
         MechanicsManager.instance.characterMotors.Add(this);
@@ -32,9 +41,19 @@ public class CharacterMotor : MonoBehaviour
             m_look.GetComponent<Camera>().cullingMask = GameManager.ReturnBitShift(layerMaskNamesList.ToArray());
 
         }
+
+        //stress Startup
+        currentStress = maxStress;
+        stressBar.SetStress(currentStress);
+
+        _rb = GetComponent<Rigidbody>();
+
     }
     void Update()
     {
+        //More Stress Code
+        stressBar.SetStress(currentStress);
+
         float x = 0.0f;
         if (Input.GetKey(KeyCode.A))
         {
@@ -96,5 +115,34 @@ public class CharacterMotor : MonoBehaviour
             m_velocity.y = -1.0f;
         }
 
+        //Taking Damage + Damage Overtime
+
+        StartCoroutine(DamageOverTimeCoroutine(0, 0));
+
+        void DamageStress(int damage)
+        {
+            currentStress -= damage;
+        }
+
+        void HealStress(int heal)
+        {
+            currentStress += heal;
+        }
+
+        IEnumerator DamageOverTimeCoroutine(float damageAmount, float duration)
+        {
+            float amountDamage = 0;
+            duration = 3000;
+            damageAmount = 2;
+            float damagePerLoop = damageAmount / duration;
+
+            while (amountDamage < damageAmount)
+            {
+                currentStress -= damagePerLoop;
+                Debug.Log("Taking Damage Right Now");
+                amountDamage += damagePerLoop;
+                yield return new WaitForSeconds(1f);
+            }
+        }
     }
 }
