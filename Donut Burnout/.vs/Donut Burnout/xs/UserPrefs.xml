@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{B589F61B-01D6-A3A4-9889-26951B3AD88C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MechanicsManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GameManager.cs" Line="131" Column="1" />
+      <File FileName="Assets/Scripts/MechanicsManager.cs" Line="141" Column="56" />
+      <File FileName="Assets/Scripts/CharacterMotor.cs" />
+      <File FileName="Assets/Scripts/ButtonMechanics.cs" />
+      <File FileName="Assets/Prompt.cs" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d507d5ab-41cd-4772-a1ad-c561e547d9b2" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
