@@ -10,6 +10,7 @@ public class Prompt : MonoBehaviour
 
     private void Update()
     {
+
         transform.LookAt(MechanicsManager.instance.characterMotors[0].m_look.transform);
     }
 }
