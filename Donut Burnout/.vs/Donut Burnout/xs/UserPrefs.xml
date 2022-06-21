@@ -1,13 +1,14 @@
-﻿<Properties>
+﻿<Properties StartupConfiguration="{FA29F5A4-45F6-968A-7846-38E1F5D523A2}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager.cs" Line="57" Column="13" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="43" Column="21" />
       <File FileName="Assets/Scripts/MechanicsManager.cs" />
       <File FileName="Assets/Scripts/CharacterMotor.cs" />
       <File FileName="Assets/Scripts/ButtonMechanics.cs" />
       <File FileName="Assets/Prompt.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Unity.CollabProxy.Editor PreferredExecutionTarget="ea0795cd-a998-4f41-8b61-3a7f511ad563" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
     <String>UnityEngine.UI.csproj</String>
