@@ -24,6 +24,7 @@ public class CharacterMotor : MonoBehaviour
     {
         MechanicsManager.instance.characterMotors.Add(this);
 
+
         if (PlayerPrefs.GetInt("Debug") == 1)
         {
             List<string> layerMaskNamesList = GameManager.ReturnLayerMaskNames(m_look.GetComponent<Camera>().cullingMask);
