@@ -28,10 +28,7 @@ public class ButtonMechanics : MonoBehaviour, IPointerClickHandler, IPointerDown
 
     [Header("Start Menu Buttons")]
 
-    [Tooltip("Opens the level Menu")]
-    public bool OpenLevelBool;
-    public bool CloseLevelBool;
-    public bool TestWorldBool;
+    public bool PlayGameBool;
 
     [Tooltip("Opens the controls Menu")]
     public bool OpenControlsBool;
@@ -156,17 +153,6 @@ public class ButtonMechanics : MonoBehaviour, IPointerClickHandler, IPointerDown
 
     public void DoFunction()
     {
-
-        if (OpenLevelBool)
-        {
-            GameManager.AnimationChangeDirection(MainMenu.instance.GetComponent<Animation>(), "Level Menu Change");
-        }
-
-        if (CloseLevelBool)
-        {
-            GameManager.AnimationChangeDirection(MainMenu.instance.GetComponent<Animation>(), "Level Menu Change", false);
-        }
-
         if (PoolName != "")
         {
             PlayerPrefs.SetFloat(PoolName, transform.GetChild(0).GetComponent<Slider>().value);
@@ -204,7 +190,7 @@ public class ButtonMechanics : MonoBehaviour, IPointerClickHandler, IPointerDown
             Application.Quit();
         }
 
-        if (TestWorldBool)
+        if (PlayGameBool)
         {
             GameManager.instance.ChangeScene(1);
         }

@@ -22,6 +22,8 @@ public class CharacterMotor : MonoBehaviour
 
     private void Start()
     {
+        MechanicsManager.instance.characterMotors.Add(this);
+
         if (PlayerPrefs.GetInt("Debug") == 1)
         {
             List<string> layerMaskNamesList = GameManager.ReturnLayerMaskNames(m_look.GetComponent<Camera>().cullingMask);
@@ -56,6 +58,7 @@ public class CharacterMotor : MonoBehaviour
         {
             m_velocity.y = m_jumpspeed;
             m_grounded = false;
+            GameManager.instance.SoundPool.PlaySound(GameManager.instance.PlayerJumpSound, 1, true, 0, false, transform);
         }
         if (Input.GetKey(KeyCode.LeftShift))
         {

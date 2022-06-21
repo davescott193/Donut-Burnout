@@ -84,11 +84,13 @@ public class MechanicsManager : MonoBehaviour
     }
     void CreateCustomerVoid()
     {
+
         CustomerData customerData = new CustomerData();
 
 
         customerData.CustomerTransform = Instantiate(CustomerPrefab, ReturnRandomChild(EntryPositionsTransform).position, Quaternion.identity).transform;
         customerData.CustomerTransform.name = "Customer Number " + CustomerList.Count.ToString("00");
+        GameManager.instance.SoundPool.PlaySound(GameManager.instance.CustomerEntersSound, 1, true, 0, false, customerData.CustomerTransform);
         CustomerList.Add(customerData);
     }
 
@@ -178,6 +180,8 @@ public class MechanicsManager : MonoBehaviour
 
                         CustomerList[i].CustomerPrompt.PromptText.text = GameManager.instance.FoodList[CustomerList[i].FoodTypeInt].name;
                         CustomerList[i].WaitThresholdFloat = 0;
+
+                        GameManager.instance.SoundPool.PlaySound(GameManager.instance.CustomerOrdersSound, 1, true, 0, false, CustomerList[i].CustomerTransform);
                     }
 
                     countInt++;
@@ -202,7 +206,7 @@ public class MechanicsManager : MonoBehaviour
                     if (CustomerList[i].CustomerStatusInt == countInt)
                     {
                         Destroy(CustomerList[i].CustomerPrompt.gameObject);
-
+                        GameManager.instance.SoundPool.PlaySound(GameManager.instance.CustomerReceivesSound, 1, true, 0, false, CustomerList[i].CustomerTransform);
                         for (int j = 0; j < CustomerList.Count; j++)
                         {
                             if (CustomerList[j].PositionTransform == CustomerList[i].CustomerTransform)
@@ -230,13 +234,14 @@ public class MechanicsManager : MonoBehaviour
                     {
                         CustomerList[i].PlateTransform.position += (CustomerList[i].CustomerTransform.forward * 0.5f);
                         CustomerList[i].PlateTransform.SetParent(null, true);
+                        GameManager.instance.SoundPool.PlaySound(GameManager.instance.CustomerPlacesPlateDownSound, 1, true, 0, false, CustomerList[i].CustomerTransform);
                     }
 
                     countInt++;
                     if (CustomerList[i].CustomerStatusInt == countInt)
                     {
                         Destroy(CustomerList[i].FoodTransform.gameObject);
-
+                        GameManager.instance.SoundPool.PlaySound(GameManager.instance.CustomerEatsSound, 1, true, 0, false, CustomerList[i].CustomerTransform);
                         CustomerList[i].PositionTransform = ReturnRandomChild(EntryPositionsTransform);
                         CustomerList[i].WaitThresholdFloat = 0;
                     }

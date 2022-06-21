@@ -62,8 +62,9 @@
     <Compile Include="Assets/Scripts/GameManager.cs" />
     <Compile Include="Assets/Scripts/MechanicsManager.cs" />
     <Compile Include="Assets/Scripts/CharacterMotor.cs" />
-    <Compile Include="Assets/Prompt.cs" />
+    <Compile Include="Assets/Scripts/Prompt.cs" />
     <Compile Include="Assets/Scripts/MainMenu.cs" />
+    <Compile Include="Assets/Scripts/StepSound.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/SkySeries Freebie/Hdri setup.txt" />

@@ -1,21 +1,19 @@
-﻿<Properties StartupConfiguration="{FA29F5A4-45F6-968A-7846-38E1F5D523A2}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
+﻿<Properties StartupConfiguration="{B589F61B-01D6-A3A4-9889-26951B3AD88C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ButtonMechanics.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager.cs" Line="43" Column="21" />
-      <File FileName="Assets/Scripts/MechanicsManager.cs" />
-      <File FileName="Assets/Scripts/CharacterMotor.cs" />
-      <File FileName="Assets/Scripts/ButtonMechanics.cs" />
-      <File FileName="Assets/Prompt.cs" />
+      <File FileName="Assets/Prompt.cs" Line="14" Column="67" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="34" Column="32" />
+      <File FileName="Assets/Scripts/ButtonMechanics.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MechanicsManager.cs" Line="11" Column="33" />
+      <File FileName="Assets/Scripts/CharacterMotor.cs" Line="26" Column="1" />
+      <File FileName="Assets/Scripts/StepSound.cs" Line="9" Column="4" />
+      <File FileName="Assets/Scripts/MouseLook.cs" Line="14" Column="57" />
+      <File FileName="Assets/Scripts/MainMenu.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Unity.CollabProxy.Editor PreferredExecutionTarget="ea0795cd-a998-4f41-8b61-3a7f511ad563" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <DisabledProjects>
-    <String>UnityEngine.UI.csproj</String>
-    <String>Assembly-CSharp.csproj</String>
-    <String>UnityEditor.UI.csproj</String>
-  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="308e1ff9-4f19-4df2-804e-152e8ce108bd" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

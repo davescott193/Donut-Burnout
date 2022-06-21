@@ -30,6 +30,15 @@ public class GameManager : MonoBehaviour
     public AudioClip ButtonDownSound;
     public AudioClip ButtonUpSound;
     [Space(10)]
+    public AudioClip PlayerFootStepSound;
+    public AudioClip PlayerJumpSound;
+    [Space(10)]
+    public AudioClip CustomerEntersSound;
+    public AudioClip CustomerOrdersSound;
+    public AudioClip CustomerReceivesSound;
+    public AudioClip CustomerEatsSound;
+    public AudioClip CustomerPlacesPlateDownSound;
+    [Space(10)]
     public AudioClip LoadingSound;
     [Space(10)]
     public AudioClip MenuMusic;
@@ -52,6 +61,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+
         if (instance)
         {
             Destroy(gameObject);
@@ -150,7 +160,8 @@ public class GameManager : MonoBehaviour
         firstBool = false;
         animationState = AnimationChangeDirection(GetComponent<Animation>(), "Load", false);
         animationState.time = 0.5f;
-        GameManager.CursorChange(sceneNumber == 0);
+        CursorChange(sceneNumber == 0);
+        MusicPool.PlayMusic(sceneNumber == 0 ? MenuMusic : GameMusic);
         LoadingCoroutine = null;
 
         // GameManager.instance.MusicPool.PlayMusic(SceneMusicList[sceneNumber]);
