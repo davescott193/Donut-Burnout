@@ -96,7 +96,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -131,7 +131,8 @@ MonoBehaviour:
   m_Spin: 0
   m_Tilt: 30
   m_Sensitivity: 1
-  m_TiltExtents: {x: -85, y: 85}
+  m_TiltExtents: {x: 30, y: 40}
+  h_TiltExtents: {x: -20, y: 20}
   m_bCursorLocked: 1
 --- !u!1 &5322759920749880307
 GameObject:

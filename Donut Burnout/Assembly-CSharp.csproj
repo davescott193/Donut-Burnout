@@ -65,6 +65,7 @@
     <Compile Include="Assets/Scripts/Prompt.cs" />
     <Compile Include="Assets/Scripts/MainMenu.cs" />
     <Compile Include="Assets/Scripts/StepSound.cs" />
+    <Compile Include="Assets/Scripts/PictureMechanics.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/SkySeries Freebie/Hdri setup.txt" />

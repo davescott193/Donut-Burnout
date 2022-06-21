@@ -12,10 +12,11 @@ public class MechanicsManager : MonoBehaviour
     public Transform EntryPositionsTransform;
     public Transform CounterPositionsTransform;
     public Transform TablePositionsTransform;
-
+    public Transform PictureHolderTransform;
     public GameObject CustomerPrefab;
     public GameObject PlatePrefab;
     public GameObject PromptCanvasPrefab;
+    public GameObject PictureMechanicsPrefab;
 
     public List<CustomerData> CustomerList = new List<CustomerData>();
     public float CustomerTimerFloat;
@@ -177,7 +178,8 @@ public class MechanicsManager : MonoBehaviour
                         CustomerList[i].CustomerPrompt = Instantiate(PromptCanvasPrefab, CustomerList[i].CustomerTransform).GetComponent<Prompt>();
                         CustomerList[i].CustomerPrompt.transform.position = CustomerList[i].CustomerTransform.position + new Vector3(0, 2.4f, 0);
                         CustomerList[i].FoodTypeInt = Random.Range(0, GameManager.instance.FoodList.Count);
-
+                        CustomerList[i].CustomerPrompt.CustomerData = CustomerList[i];
+                        CustomerList[i].CustomerPrompt.CreatePicture();
                         CustomerList[i].CustomerPrompt.PromptText.text = GameManager.instance.FoodList[CustomerList[i].FoodTypeInt].name;
                         CustomerList[i].WaitThresholdFloat = 0;
 

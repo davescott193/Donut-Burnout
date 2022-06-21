@@ -3034,9 +3034,11 @@ MonoBehaviour:
   EntryPositionsTransform: {fileID: 948207284}
   CounterPositionsTransform: {fileID: 984094615}
   TablePositionsTransform: {fileID: 2072464141}
+  PictureHolderTransform: {fileID: 1359489051}
   CustomerPrefab: {fileID: 8636119438045633910, guid: 03496a0e0f28944e9b7e3b6f1650565e, type: 3}
   PlatePrefab: {fileID: 8864188452142992969, guid: c7985f81a120547feafc588b8ae5ab76, type: 3}
   PromptCanvasPrefab: {fileID: 1660299865621592681, guid: 68845aec8ce4d413b975d4f91356e430, type: 3}
+  PictureMechanicsPrefab: {fileID: 3668878862525316961, guid: c84ee15c008fe4aadb009300e9c06f5a, type: 3}
   CustomerList: []
   CustomerTimerFloat: 0
   CustomerThresholdFloat: 0
@@ -3056,6 +3058,7 @@ Transform:
   - {fileID: 948207284}
   - {fileID: 984094615}
   - {fileID: 2072464141}
+  - {fileID: 1359489051}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3624,6 +3627,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1968113472802673959, guid: cea177df03d344c82a913cb9b546996f, type: 3}
   m_PrefabInstance: {fileID: 1353206682}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1359489050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1359489051}
+  m_Layer: 0
+  m_Name: Picture Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1359489051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359489050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9999, y: 0, z: 9999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1122351632}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1406871488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5501,22 +5534,6 @@ PrefabInstance:
     - target: {fileID: 3374351480224452495, guid: 971aea77fa3294a70b7784b7da2ea488, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3484302333274364826, guid: 971aea77fa3294a70b7784b7da2ea488, type: 3}
-      propertyPath: h_TiltExtents.x
-      value: -20
-      objectReference: {fileID: 0}
-    - target: {fileID: 3484302333274364826, guid: 971aea77fa3294a70b7784b7da2ea488, type: 3}
-      propertyPath: h_TiltExtents.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 3484302333274364826, guid: 971aea77fa3294a70b7784b7da2ea488, type: 3}
-      propertyPath: m_TiltExtents.x
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 3484302333274364826, guid: 971aea77fa3294a70b7784b7da2ea488, type: 3}
-      propertyPath: m_TiltExtents.y
-      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 971aea77fa3294a70b7784b7da2ea488, type: 3}
