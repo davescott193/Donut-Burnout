@@ -59,10 +59,13 @@
     <Compile Include="Assets\Scripts\AudioPool.cs" />
     <Compile Include="Assets\Scripts\ButtonMechanics.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Scripts\UI_CODE\Stress_UI.cs" />
+    <Compile Include="Assets\Scripts\PictureMechanics.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\MechanicsManager.cs" />
-    <Compile Include="Assets\Scripts\StressBar.cs" />
-    <Compile Include="Assets\Prompt.cs" />
+    <Compile Include="Assets\Scripts\StepSound.cs" />
+    <Compile Include="Assets\Scripts\CharacterMotor.cs" />
+    <Compile Include="Assets\Scripts\Prompt.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
   </ItemGroup>
   <ItemGroup>
