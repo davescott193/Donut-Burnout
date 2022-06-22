@@ -15,7 +15,7 @@ public class PictureMechanics : MonoBehaviour
 
     private void Update()
     {
-        transform.Rotate(new Vector3(0, 90, 0) * Time.deltaTime);
+        ReturnChildTransform().Rotate(new Vector3(0, 90, 0) * Time.deltaTime);
     }
 
     public Texture ReturnPicture(bool realtimeBool = false, float cameraShiftFloat = 1)

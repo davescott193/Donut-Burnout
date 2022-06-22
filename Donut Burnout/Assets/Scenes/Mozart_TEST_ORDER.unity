@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.45114982, g: 0.5009295, b: 0.57387125, a: 1}
+  m_IndirectSpecularColor: {r: 0.45114923, g: 0.50092894, b: 0.5738703, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3171,11 +3171,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbdbf679e89e14d48badf467201fa794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterMotors: []
   EntryPositionsTransform: {fileID: 948207284}
   CounterPositionsTransform: {fileID: 984094615}
   TablePositionsTransform: {fileID: 2072464141}
+  PictureHolderTransform: {fileID: 0}
   CustomerPrefab: {fileID: 8636119438045633910, guid: 03496a0e0f28944e9b7e3b6f1650565e, type: 3}
   PlatePrefab: {fileID: 8864188452142992969, guid: c7985f81a120547feafc588b8ae5ab76, type: 3}
+  PromptCanvasPrefab: {fileID: 1660299865621592681, guid: 68845aec8ce4d413b975d4f91356e430, type: 3}
+  PictureMechanicsPrefab: {fileID: 3668878862525316961, guid: c84ee15c008fe4aadb009300e9c06f5a, type: 3}
+  CustomerList: []
   CustomerTimerFloat: 0
   CustomerThresholdFloat: 0
 --- !u!4 &1122351632
