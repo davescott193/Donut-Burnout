@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
     public AudioPool SoundPool;
     public Animation SceneAnimation;
     Coroutine LoadingCoroutine;
-    [HideInInspector]
+    // [HideInInspector]
     public List<GameObject> FoodList = new List<GameObject>();
 
     [System.Serializable]
@@ -85,6 +85,7 @@ public class GameManager : MonoBehaviour
                 PlayerPrefs.SetInt("Shadows", 1);
             }
 
+#if UNITY_EDITOR
             string[] searchedAssetsArray = AssetDatabase.FindAssets("", new[] { "Assets/Resources/Food" });
 
             for (int i = 0; i < searchedAssetsArray.Length; i++)
@@ -92,6 +93,7 @@ public class GameManager : MonoBehaviour
                 string assetPathString = AssetDatabase.GUIDToAssetPath(searchedAssetsArray[i]);
                 FoodList.Add((GameObject)AssetDatabase.LoadAssetAtPath(assetPathString, typeof(GameObject)));
             }
+#endif
         }
 
         firstBool = true;
